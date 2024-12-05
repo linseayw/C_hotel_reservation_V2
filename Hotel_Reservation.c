@@ -6,6 +6,8 @@
 #define MAX_CUSTOMERS 100
 #define MAX_SERVICES 10
 
+//da
+
 // Makro untuk membersihkan layar
 #ifdef _WIN32
     #define CLEAR_SCREEN() system("cls")
