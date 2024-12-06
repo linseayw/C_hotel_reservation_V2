@@ -66,7 +66,7 @@ full name : Yona Andras
 phone number :999988887777  
 Nik or passport number:6879hjibbuiy8hi  
 Room type: standard  
-Room price:50 $ 
+Room price:50 $  
 hotel entry date: 31-12-2024  
 Hotel checkout date: 02-01-2025  
 How many nights stay: 2 days  
@@ -155,19 +155,55 @@ room cleaning number (81636)
 Please select..
 
 ## User Interface 2.1.R (Customers features (Ratting))
-0.BACK  
+Customers Yona Andras (8/10)  
+Customers Andars Linsea (7/10)  
+overall Ratting : 7.5  
+1. Input Ratting  
+0. BACK  
 Please select..
+
+// If you select input rating, then it will display  
+please enter your name :  
+please enter the Ratting (1-10):  
+thanks for the comment
 
 ## User Interface 2.1.C (Customers features (Commentary))
+Customers Yona Andras : 8/10  
+Customers Andars Linsea : 7/10   
+  
+1. Input comments  
 0.BACK  
 Please select..
 
+//if you select input comments, then it will display  
+please enter your name :  
+please enter a comment :  
+thanks for the comment
+
 ## User Interface 2.1.RD (Customers features (Room description))
+- Standard room: Room with an area of ​​6 x 6 meters, with a bed that can fit 2 people  
+- VIP room: room with an area of ​​10 x10 meters, with a high quality mattress and bathtub  
+- suite room: room with an area of ​​15 x 15 meters, with a high quality mattress, separate bathroom with living room and free entry to all services
+
 0.BACK  
 Please select..
 
 ## User Interface 2.1.SR (Customers features (Self-reservation))
-0.BACK  
-Please select..
+welcome to Self Reservation
+1. Standard room
+2. VIP room
+3. Suite room
+Please choose which room you want :..
+
+Please input data
+Your full name...  
+Phone number...  
+Your NIK or passport...  
+hotel check-in date (dd/mm/yyyy)...  
+Hotel check-out date (dd/mm/yyyy)...  
+
+Please confirm payment and order in the registration section  
+Thank You
+
 
 
