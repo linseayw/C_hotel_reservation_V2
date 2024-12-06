@@ -45,7 +45,7 @@ Room no222, Status: empty
 1. Add a room
 2. Delete the room
 3. Update room status
-0. BACK
+0. BACK  
 Please select..
 
 ## User Interface 1.1.1.CD (Admin (Customer Data))
@@ -95,7 +95,7 @@ overall income:
 0.BACK  
 Please select..
 
-## User Interface 1.1.1.IHSI (Admin (Visit report Data))
+## User Interface 1.1.1.IHSI (Admin features(Visit report Data))
 Customer in 2023  
 1. Customer in January: 112  
 2. Customer in February: 20  
@@ -114,11 +114,29 @@ overall Customer: 552
 0.BACK  
 Please select..
 
-User Interface 1.1.1.IHRD (Admin (Input hotel service information))
+## User Interface 1.1.1.IHSI (Admin features(Input hotel service information))  
+//This UI must be connected to the Customers features (View hotel service information)  
+Displays Hotel service information  
+Restaurant number(894163)  
+Reservation number(536474)  
+laundry number (1830 1937 018)  
+room cleaning number (81636)  
+1.add service  
+2.delete service  
+0.BACK  
+Please select..
 
-User Interface 1.1.1.IHRD (Admin (Input hotel room description))
+## User Interface 1.1.1.IHRD (Admin features(Input hotel room description))  
+//This UI must be connected to the Customers features (room description)  
+- Standard room: Room with an area of ​​6 x 6 meters, with a bed that can fit 2 people  
+- VIP room: room with an area of ​​10 x10 meters, with a high quality mattress and bathtub  
+- suite room: room with an area of ​​15 x 15 meters, with a high quality mattress, separate bathroom with living room and free entry to all services  
+1.add room description  
+2.delete room description  
+0.BACK  
+Please select..
 
-User Interface 2.1 (Customers features)
+## User Interface 2.1 (Customers features)
 1. View hotel service information
 2. Ratting
 3. Commentary
@@ -126,4 +144,30 @@ User Interface 2.1 (Customers features)
 5. Self-reservation 
 0. BACK  
 Please select ...
+
+## User Interface 2.1.VHSI (Customers features(View hotel service information)  
+View hotel service information    
+Restaurant number(894163)  
+Reservation number(536474)  
+laundry number (1830 1937 018)  
+room cleaning number (81636)  
+0.BACK  
+Please select..
+
+## User Interface 2.1.R (Customers features (Ratting))
+0.BACK  
+Please select..
+
+## User Interface 2.1.C (Customers features (Commentary))
+0.BACK  
+Please select..
+
+## User Interface 2.1.RD (Customers features (Room description))
+0.BACK  
+Please select..
+
+## User Interface 2.1.SR (Customers features (Self-reservation))
+0.BACK  
+Please select..
+
 
