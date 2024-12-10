@@ -3,6 +3,7 @@
 ### I'm a new github user
 
 ## User Interface 1 (Main)
+- [x] status finished  
 1. Admin
 2. Customers 
 0. BACK  
@@ -10,18 +11,20 @@ Please select ...
 
 
 ## User Interface 1.1 (Admin)
+- [x] status finished  
 1. Registration
 2. Login
 0. BACK  
 Please select ...
 
 ## User Interface 1.1.R (Admin Registration)
-
+- [x] status finished  
 Please enter a new username...  
 Please enter the password...  
 Congratulations on success, please log in
 
 ## User Interface 1.1.L (Admin(Login))
+- [x] status finished  
 Please enter a new username...  
 Please enter the password...  
 Congratulations login success  
@@ -29,6 +32,7 @@ Or
 Incorrect username or password, please try again
 
 ## User Interface 1.1.1 (Admin features)
+- [x] status finished  
 1. Room data
 2. Customer data
 3. Payment report data
@@ -39,6 +43,7 @@ Incorrect username or password, please try again
 Please select ...
 
 ## User Interface 1.1.1.RD (Admin (Room Data))
+- [ ] status finished  
 // Displays information on room number, whether available or not, and room type  
 Room no 221, Status: occupied  
 Room no222, Status: empty  
@@ -49,6 +54,7 @@ Room no222, Status: empty
 Please select..
 
 ## User Interface 1.1.1.CD (Admin (Customer Data))
+- [ ] status finished  
 Displays customer data sequence  
 Customer 1  
 full name : Linsea Yona  
@@ -77,6 +83,7 @@ what is the total payment:100 $
 Please select..  
 
 ## User Interface 1.1.1.PRD (Admin (Payment report Data))
+- [ ] status finished  
 // Displays the order of payment data by month
 1. Income in January:  
 2. Income in February:  
@@ -96,6 +103,7 @@ overall income:
 Please select..
 
 ## User Interface 1.1.1.IHSI (Admin features(Visit report Data))
+- [ ] status finished  
 Customer in 2023  
 1. Customer in January: 112  
 2. Customer in February: 20  
@@ -115,6 +123,7 @@ overall Customer: 552
 Please select..
 
 ## User Interface 1.1.1.IHSI (Admin features(Input hotel service information))  
+- [x] status finished  
 //This UI must be connected to the Customers features (View hotel service information)  
 Displays Hotel service information  
 Restaurant number(894163)  
@@ -127,6 +136,7 @@ room cleaning number (81636)
 Please select..
 
 ## User Interface 1.1.1.IHRD (Admin features(Input hotel room description))  
+- [x] status finished  
 //This UI must be connected to the Customers features (room description)  
 - Standard room: Room with an area of ​​6 x 6 meters, with a bed that can fit 2 people  
 - VIP room: room with an area of ​​10 x10 meters, with a high quality mattress and bathtub  
@@ -137,6 +147,7 @@ Please select..
 Please select..
 
 ## User Interface 2.1 (Customers features)
+- [x] status finished  
 1. View hotel service information
 2. Ratting
 3. Commentary
@@ -146,6 +157,7 @@ Please select..
 Please select ...
 
 ## User Interface 2.1.VHSI (Customers features(View hotel service information)  
+- [x] status finished  
 View hotel service information    
 Restaurant number(894163)  
 Reservation number(536474)  
@@ -155,6 +167,7 @@ room cleaning number (81636)
 Please select..
 
 ## User Interface 2.1.R (Customers features (Ratting))
+- [ ] status finished  
 Customers Yona Andras (8/10)  
 Customers Andars Linsea (7/10)  
 overall Ratting : 7.5  
@@ -168,6 +181,7 @@ please enter the Ratting (1-10):
 thanks for the comment
 
 ## User Interface 2.1.C (Customers features (Commentary))
+- [ ] status finished  
 Customers Yona Andras : 8/10  
 Customers Andars Linsea : 7/10   
   
@@ -181,6 +195,7 @@ please enter a comment :
 thanks for the comment
 
 ## User Interface 2.1.RD (Customers features (Room description))
+- [ ] status finished  
 - Standard room: Room with an area of ​​6 x 6 meters, with a bed that can fit 2 people  
 - VIP room: room with an area of ​​10 x10 meters, with a high quality mattress and bathtub  
 - suite room: room with an area of ​​15 x 15 meters, with a high quality mattress, separate bathroom with living room and free entry to all services
@@ -189,6 +204,7 @@ thanks for the comment
 Please select..
 
 ## User Interface 2.1.SR (Customers features (Self-reservation))
+- [ ] status finished  
 welcome to Self Reservation
 1. Standard room
 2. VIP room
