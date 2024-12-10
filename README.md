@@ -1,15 +1,18 @@
 # I'm trying to trial using GitHub to create a reservation system in the C programming language
-
+---
 ### I'm a new github user
-
+---
 ## User Interface 1 (Main)
+output 
+```
 1. Admin
 2. Customers 
 0. BACK  
 Please select ...
-
+```
 
 ## User Interface 1.1 (Admin)
+
 1. Registration
 2. Login
 0. BACK  
