@@ -404,6 +404,7 @@ void dataCustomerMenu() {
     do {
         system("cls");
         printf("=== Data Pelanggan ===\n");
+         loadSelfReservation();
         for (int i = 0; i < customerCount; i++) {//menampilkan output data pelaggan secara berulang
             printf("Pelanggan %d:\n", i + 1);
             printf("Nama Lengkap: %s\n", customers[i].name);//menampilkan informasi yang tersimpan di array
@@ -433,11 +434,13 @@ void dataCustomerMenu() {
                 }
                 customerCount--;
                 printf("Pelanggan berhasil dihapus.\n");
+                saveSelfReservation();
             }
             pause();
             break;
         }
         case 0:
+            saveSelfReservation();
             return;
         default:
             printf("Pilihan tidak valid.\n");
@@ -747,8 +750,6 @@ void roomDescription() {
 //terdiri atas modul 2 sintaks dasar, 3 percabagan, 5 fungsi, 6 array, 8 input/output
 void selfReservation() {
     CLEAR_SCREEN();
-    FILE *data;
-    data = fopen("reservasi_mandiri.txt", "a+");
     int roomChoice;
     Customer newCustomer;
 
@@ -798,11 +799,29 @@ void selfReservation() {
 
     printf("Silahkan melakukan konfirmasi pemesanan dan pembayaran pada meja registrasi.\n");
     printf("Selesai.\n");
-    fprintf(data, "\nNama lengkap:%s\n", newCustomer.name);
-    fprintf(data, "Nomor telepon:%s\n", newCustomer.phone);
-    fprintf(data, "NIK atau nomor pasport:%s\n", newCustomer.idNumber);
-    fprintf(data, "Masukan tanggal masuk (dd/mm/yyyy)::%s\n", newCustomer.tanggalmasuk);
-    fprintf(data, "Masukan tanggal keluar (dd/mm/yyyy)::%s\n", newCustomer.tanggalkeluar);
+}
+void saveSelfReservation() {
+    Customer newCustomer;
+    FILE *data;
+    data = fopen("reservasi_mandiri.dat", "wb");
+    if (data == NULL) {
+        printf("Error: Tidak dapat menyimpan data.\n");
+        return;
+    }
+    fwrite(&newCustomer, sizeof(newCustomer), 1, data);
+    fclose(data);
+}
+
+// Fungsi untuk membaca data dari file
+void loadSelfReservation() {
+    Customer newCustomer;
+    FILE *data;
+    data = fopen("reservasi_mandiri.dat", "rb");
+    if (data == NULL) {
+        printf("Tidak ada file data ditemukan. Memulai dengan data kosong.\n");
+        return;
+    }
+    fread(&newCustomer, sizeof(newCustomer), 1, data);
     fclose(data);
 }
 
