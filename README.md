@@ -181,7 +181,7 @@ please enter the Ratting (1-10):
 thanks for the comment
 
 ## User Interface 2.1.C (Customers features (Commentary))
-- [ ] status finished  
+- [x] status finished  
 Customers Yona Andras : 8/10  
 Customers Andars Linsea : 7/10   
   
@@ -195,7 +195,7 @@ please enter a comment :
 thanks for the comment
 
 ## User Interface 2.1.RD (Customers features (Room description))
-- [ ] status finished  
+- [x] status finished  
 - Standard room: Room with an area of ​​6 x 6 meters, with a bed that can fit 2 people  
 - VIP room: room with an area of ​​10 x10 meters, with a high quality mattress and bathtub  
 - suite room: room with an area of ​​15 x 15 meters, with a high quality mattress, separate bathroom with living room and free entry to all services
