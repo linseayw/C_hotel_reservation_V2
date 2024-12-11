@@ -743,9 +743,12 @@ void roomDescription() {
 
 
 // Fungsi Reservasi Mandiri
-//kurang modul input/output
+//selesai
 //terdiri atas modul 2 sintaks dasar, 3 percabagan, 5 fungsi, 6 array, 8 input/output
 void selfReservation() {
+    CLEAR_SCREEN();
+    FILE *data;
+    data = fopen("reservasi_mandiri.txt", "a+");
     int roomChoice;
     Customer newCustomer;
 
@@ -795,6 +798,12 @@ void selfReservation() {
 
     printf("Silahkan melakukan konfirmasi pemesanan dan pembayaran pada meja registrasi.\n");
     printf("Selesai.\n");
+    fprintf(data, "\nNama lengkap:%s\n", newCustomer.name);
+    fprintf(data, "Nomor telepon:%s\n", newCustomer.phone);
+    fprintf(data, "NIK atau nomor pasport:%s\n", newCustomer.idNumber);
+    fprintf(data, "Masukan tanggal masuk (dd/mm/yyyy)::%s\n", newCustomer.tanggalmasuk);
+    fprintf(data, "Masukan tanggal keluar (dd/mm/yyyy)::%s\n", newCustomer.tanggalkeluar);
+    fclose(data);
 }
 
 
