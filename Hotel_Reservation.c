@@ -1,7 +1,7 @@
 #include <stdio.h>//Library standar untuk operasi input dan output
 #include <string.h>//Library untuk manipulasi string, seperti strcpy(), strlen()
 #include <stdlib.h>//Library standar untuk fungsi-fungsi umum seperti malloc(), free(), dan system()
-
+//
 #define MAX_ROOMS 100//define mendefinisikan konstanta
 #define MAX_CUSTOMERS 100
 #define MAX_SERVICES 10//Mendefinisikan konstanta pada fungsi hotelServicesMenu
