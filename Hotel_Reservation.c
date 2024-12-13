@@ -123,9 +123,9 @@ void adminRegistration();//r
 void adminLogin();//kurang membuat kunci max 3 kali
 
 void dataRoomMenu();//r
-void dataCustomerMenu();
-void paymentReportMenu();
-void visitReportMenu();
+void dataCustomerMenu();//r
+void paymentReportMenu();//r (kurang rapi)
+void visitReportMenu();//r (kurang rapi)
 void hotelServicesMenu();//r
 void InputDescription();//r
 
@@ -262,6 +262,7 @@ void adminRegistration() {
     scanf("%49s", admins[adminCount].password);  // Input password (mencegah buffer overflow)
 
     printf("Selamat, Anda telah berhasil mendaftar! Silahkan login.\n");
+    printf("Tekan Enter untuk melankutkan...\n");
 
     // Simpan data admin ke file
     fwrite(&admins[adminCount], sizeof(Admin), 1, myfile);
@@ -271,7 +272,6 @@ void adminRegistration() {
 
     data_log(admins[adminCount - 1].username, "adminRegistration");  // Log aktivitas
 
-    adminMenu();  // Panggil menu operator setelah registrasi
     pause();  // Tunggu input pengguna
 }
 
@@ -542,15 +542,19 @@ void dataCustomerMenu() {
 void paymentReportMenu() {
     int choice;
     do {
+         loadSelfReservation();
         system("cls");
-        printf("=== Data Pelanggan ===\n");
+    printf("=== Daftar Data Pembayaran ===\n");
+    if (customerCount == 0) {
+        printf("Belum ada pelangan.\n");
+    } else {
         for (int i = 0; i < customerCount; i++) {
             printf("Pelanggan %d:\n", i + 1);
             printf("tanggal masuk (dd/mm/yyyy): %s\n", customers[i].tanggalmasuk);
             printf("Tipe Kamar: %s\n", customers[i].roomType);
             printf("Harga Kamar: %d\n", customers[i].price);           
             printf("-----------------------------\n");
-        }
+        }}
 
         printf("\n1. Hapus Pelanggan\n");
         printf("0. Kembali\n");
@@ -585,17 +589,15 @@ void paymentReportMenu() {
 
 
 // Visit report menu
-//perlu dikerjakan masih error (ketika dipencet tombol untuk dirun programnya, dia tidak mau membuka programnya)
 //terdiri atas modul 2 sintaks dasar, 3 percabagan, 5 fungsi, 6 array
 void visitReportMenu() {
     int choice;
     do
     {
-    
+    loadSelfReservation();
     system("cls");
     if (customerCount == 0) {
         printf("Belum ada data pelanggan.\n");
-        return;
     }     
 
     printf("\n=== Laporan Kunjungan ===\n");
@@ -1037,7 +1039,7 @@ void roomDescription() {
 
         printf("\nDaftar Deskripsi:\n");
         for (int i = 0; i < descriptionCount; i++) {
-            printf("%d. Tipe kamar: %s, Fasilitas: %s, Harga: %.2f\n", i + 1, descriptions[i].type, descriptions[i].facility, descriptions[i].price);
+            printf("%d. Tipe kamar: %s, Fasilitas: %s, Harga: %.2f\n\n", i + 1, descriptions[i].type, descriptions[i].facility, descriptions[i].price);
         }
 
         printf("0. Kembali\n");
